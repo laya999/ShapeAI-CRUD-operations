@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>CRUD Operations</title>
+   <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="clss1">
+        <h1><u><b>Employee Details</b></u></h1>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="name">Employee Name</label>
+                        <input type="text" name="name" id="name" minlength="3" maxlength = "25" placeholder="* This field is required"">
+                    </div>
+                    <div>
+                        <label for="code">Employee Code</label>
+                        <input type="text" name="code" id="code" maxlength="10" minlength="4" placeholder="* This field is required">
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="* This field is required">
+                    </div>
+                    <div>
+                        <label for="sal">Salary</label>
+                        <input type="text" name="sal" id="sal" minlength="4" placeholder="* This field is required">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone"  minlength="10" maxlength="10" placeholder="* This field is required">
+                    </div>
+                    <div class="btn1">
+                        <input type="reset" value="Reset" >
+                        <input type="submit" value="Submit" > 
+                    </div>             
+                </form>
+                <td>
+                    <table class="list" id="storelist">
+                        <thead>
+                            <tr>
+                                <th>Employee Name</th>
+                                <th>Employee Code</th>
+                                <th>City</th>
+                                <th>Salary</th>
+                                <th>Phone Number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+                </td>
+                </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+
+
+
+</body>
+</html>
